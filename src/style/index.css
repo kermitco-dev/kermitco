@@ -86,6 +86,10 @@ body {
     cursor: pointer;
 }
 
+#iframe_main {
+    border: 2px #b3b3b335 solid;
+    border-radius: 10px;
+}
 
 /* MAIN CONTENT */
 
