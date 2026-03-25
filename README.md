@@ -14,3 +14,7 @@ Clone the repo, then upload to a hosting site like GitHub pages or Cloudflare pa
 Any contribution that helps is welcome. Just make a pull request!
 For major changes, clone the repo, make your changes, then submit it under issues.
 For those looking for more serious conversions (such as a migration towards React and Nextjs) email [def1ant.proto@gmail.com](mailto:defiant.proto@gmail.com)
+
+## note for myself
+i dont have admin on my mac so i have to run this every time i open a shell
+`\. "$HOME/.nvm/nvm.sh"`
