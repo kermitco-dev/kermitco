@@ -14,19 +14,19 @@ interface Props {
 export function Navbar() {
     return (
         <nav className="bg-black fixed w-full z-20 top-0 inset-s-0 border-b border-gray-800">
-            <div className="flex flex-wrap items-center justify-between mx-auto p-1 pr-2">
+            <div className="flex flex-wrap items-center justify-between mx-auto p-1 pl-6 pr-6">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <Icon src="/icon_full.png" height={35}/>
                     <span className="self-center text-xl text-heading font-semibold whitespace-nowrap font-google-sans">kermitco v6</span>
                 </Link>
                 <div className="w-full md:block md:w-auto">
-                    <ul className="font-medium flex flex-col border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-3 md:mt-0 md:border-0 md:bg-neutral-primary">
+                    <ul className="font-medium flex flex-col border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-3 md:mt-0 md:border-0 md:bg-neutral-primary top-8">
                         <NavElement href="/">Home</NavElement>
                         <NavElement href="/news/">News</NavElement>
                         <NavElement href="/games/">Games</NavElement>
                         <NavElement href="/settings/">Settings</NavElement>
                         <NavElement href="https://github.com/kermitco-dev/kermitco/">
-                            <Icon height={32} src="/github_ico.png"/>
+                            <Icon height={32} src="/giticon_full.png"/>
                         </NavElement>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ export function Icon({src="/icon_full.png", height}: Props) {
 
 function NavElement({href, children}: Props) {
     return (
-        <li className=" p-3">
+        <li className="p-3">
             <Link href={{href}} className="block text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 font-google-sans" aria-current="page">{children}</Link>
         </li>
     )
