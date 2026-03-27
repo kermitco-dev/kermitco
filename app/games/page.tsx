@@ -1,13 +1,13 @@
 import { MainContentBox, MainContentHeader } from "@/utils/KermitcoSpecific"
 
-export default function News() {
+export default function Games() {
     return (
         <MainContentBox>
             <p>
-                <MainContentHeader name="News" />
-                <br/>
-                <br/>
-                TODO: add news lmao
+                <MainContentHeader name="Games"/>
+                <br />
+                <br />
+                TODO: implement games iframe
             </p>
         </MainContentBox>
     )
