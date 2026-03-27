@@ -1,14 +1,14 @@
 # kermitco
-[kermitco](https://kcobuildv5-14543115.codehs.me/) is a project meant to allow special cases of "off-topic" learning. For anyone who is bored in school, this is place to go.
+[kermitco](https://github.com/kermitco-dev/kermitco/) is a project meant to allow special cases of "off-topic" learning. For anyone who is bored in school, this is place to go.
 
 ## nextjs Branch
 This branch of kermitco is meant to slowly migrate towards a nextjs and React-based project.
 
-## Active instance
+## Active instance(s)
 None yet!
 
 ## Installation guide
-Clone the repo, then upload to a hosting site like GitHub pages or Cloudflare pages.
+Clone the repo, open `package.json` and set under `scripts/start` set `-p 80` to the port on which you wish to host. Then run `npm run build` to compile a prod-ready environment before opening prod with `npm run start`.
 
 ## Contribution
 Any contribution that helps is welcome. Just make a pull request!
