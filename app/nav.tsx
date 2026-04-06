@@ -25,7 +25,7 @@ export function Navbar() {
                         <NavElement href="/news/">News</NavElement>
                         <NavElement href="/games/">Games</NavElement>
                         <NavElement href="/settings/">Settings</NavElement>
-                        <NavElement href="https://github.com/kermitco-dev/kermitco/">
+                        <NavElement href="https://github.com/kactuscing/kermitco/">
                             <Icon height={32} src="/giticon_full.png"/>
                         </NavElement>
                     </ul>
