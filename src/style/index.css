@@ -101,7 +101,7 @@ body {
     border-radius: 10px;
     border: none;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 /* MAIN CONTENT */
 
@@ -235,4 +235,11 @@ button:hover {
 }
 @keyframes l16 { 
     100%{transform: rotate(1turn)}
+}
+
+/* CUSTOM CSS INPUT BOX */
+
+#custom_css_form {
+    width: 3em;
+    height: 3em;
 }
