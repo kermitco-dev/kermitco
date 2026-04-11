@@ -20,3 +20,17 @@ input[type="text"], button {
     color: var(--placeholder-color);
     opacity: 0.5;
 }
+
+/* CUSTOM CSS INPUT BOX */
+
+#custom_css_form {
+    width: 20em;
+    height: 10em;
+    font-family: "Lilex", monospace;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid #87878736;
+    background: #3e3e3e15;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+}
