@@ -43,6 +43,25 @@ document.getElementById("italic_link_switch").addEventListener("change", functio
         UIJS.getElement("a").style("font-style", "normal");
         Cookies.storeWithTime("italic_anchor", "normal", 43200000);
     }
+}); 
+document.querySelectorAll("a").forEach(m => {
+    m.style.color = document.getElementById("font_color").value;
 });
-document.getElementsByTagName("a").style.color = document.getElementById("font_color").value;
-document.styleSheets[0].insertRule("::placeholder {color: white;}"); //to change placeholder colour for input to match cookie value
+document.styleSheets[0].insertRule("::placeholder {color" + ": " + document.getElementById("font_color").value + " !important;}", 0);
+function ResetCSS() {
+    document.getElementsByClassName("custom_css_styling").innerHTML = "";
+}
+function InjectCSS() {
+    if (document.getElementsByClassName("custom_css_styling").length > 0) {
+        let cssContent = "";
+        for (let i = 0; i < document.getElementsByClassName("custom_css_styling").length; i++) {
+            cssContent += document.getElementsByClassName("custom_css_styling")[i].innerHTML + "\n";
+        }
+        document.getElementById("custom_css_form").value = cssContent;
+    } else {
+        let CSS_BOX = document.createElement("style");
+        CSS_BOX.innerHTML = document.getElementById("custom_css_form").value;
+        CSS_BOX.className = "custom_css_styling";
+        document.head.appendChild(CSS_BOX);
+    }
+}

@@ -1,6 +1,7 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap'); /* redacted script */
+@import url('https://fonts.googleapis.com/css2?family=Lilex:ital,wght@0,100..700;1,100..700&display=swap'); /* monospace font */
 
 /* SETUP */
 
@@ -235,11 +236,4 @@ button:hover {
 }
 @keyframes l16 { 
     100%{transform: rotate(1turn)}
-}
-
-/* CUSTOM CSS INPUT BOX */
-
-#custom_css_form {
-    width: 3em;
-    height: 3em;
 }

@@ -4,6 +4,8 @@
         <link href="style/index.css" rel="stylesheet">
         <link href="style/background_loader.css" rel="stylesheet" />
         <link href="style/settings.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script> <!-- debug console -->
     </head>
     <body>
         <div id="fx_background_blur"></div>
@@ -34,7 +36,10 @@
             </label>
             <br>
             <h4>Custom Styling</h4>
-            <input type="textarea" id="custom_css_form">
+            <textarea id="custom_css_form" placeholder="Custom CSS here..."></textarea>
+            <br>
+            <button id="inject_css" onclick="InjectCSS();">Inject CSS</button>
+            <button id="reset_css" onclick="ResetCSS();">Reset CSS</button>
             <br>
             <button id="create_link">Create settings link</button>
             <div id="settings_tooltip"><p>Your settings link will appear here. Drag it into the bookmark bar or click to copy it!</p><a id="link_creation_target"></a></div>
@@ -49,11 +54,11 @@
 			<img src="/images/background/image_7.jpeg" height="1" width="1" />
 			<img src="/images/background/image_8.jpeg" height="1" width="1" />
 		</div>
+        <script src="lib/ui.js"></script>
+        <script src="lib/cloak.js"></script>
+        <script src="lib/cookie.js"></script>
+        <script src="lib/firebase.js"></script>
+        <script src="script/settings.js"></script>
+        <script src="script/settings_loader.js"></script>
     </body>
-    <script src="lib/ui.js"></script>
-    <script src="lib/cloak.js"></script>
-    <script src="lib/cookie.js"></script>
-    <script src="lib/firebase.js"></script>
-    <script src="script/settings.js"></script>
-    <script src="script/settings_loader.js"></script>
 </html>
